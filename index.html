@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Javascript Quiz App</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fa-solid fa-code"></i> Javascript Quiz <i class="fa-solid fa-code"></i></h1>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-label">Number</div>
+          <div class="stat-value" id="Number">0</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-label">Time</div>
+          <div class="stat-value" id="time">0:00</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-label">Questions</div>
+          <div class="stat-value" id="matches">0/20</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-wrapper">
+      <div class="quiz-card">
+        <div class="quiz-board" id="quiz-board"></div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" onclick="Previous()">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+
+        <button class="btn" onclick="Next()">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="credits">© 2025 Girly Developers</footer>
+  <script src="script.js"></script>
+</body>
+</html>
